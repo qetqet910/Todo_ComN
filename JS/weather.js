@@ -8,8 +8,10 @@ const temp1 = temp.querySelectorAll('p')[0];
 const temp2 = temp.querySelectorAll('p')[1];
 const temp3 = temp.querySelectorAll('p')[2];
 
-const Country = Weather.querySelector('.country');
-const weather_condition = Weather.querySelector('.weather_condition');
+const City = document.querySelector('.C');
+const Country = City.querySelectorAll('p')[0];
+const weather_condition = City.querySelectorAll('p')[1];
+const Region = City.querySelectorAll('p')[2];
 
 function onTruePos(position){
     const lat = position.coords.latitude;
@@ -25,12 +27,14 @@ function onTruePos(position){
         const MinTemp = data.main.temp_min
         const country  = data.sys.country
         const weather = data.weather[0].main;
+        const region = data.name;
 
         temp1.innerText = `기온 : ${Temp.toFixed(1)}`;
         temp2.innerText = `최고 기온 : ${MaxTemp.toFixed(1)}`;
         temp3.innerText = `최저 기온 : ${MinTemp.toFixed(1)}`;
 
         Country.innerText = `나라 : ${country}`;
+        Region.innerText = `지역 : ${region}`;
         weather_condition.innerText = `날씨 : ${weather}`;
     })
 }
