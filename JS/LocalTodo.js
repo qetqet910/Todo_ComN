@@ -15,7 +15,7 @@ window.onload = function(){
 
         const TodoBtn = document.createElement('button');
         TodoBtn.classList.add('Todo_btn');
-        TodoBtn.innerHTML = '<i class="fas fa-trash"></i>'
+        TodoBtn.innerHTML = '<i style="pointer-events: none;" class="fas fa-trash"></i>'
         TodoLi.appendChild(TodoBtn);
 
         const TodoDes = document.createElement('span');
@@ -56,7 +56,6 @@ window.onload = function(){
     function DeleteFunc(e){
         const D_Target = e.target.parentNode;
         D_Target.remove();
-
         const SV = String(e.target.parentNode.innerText);
         const SI = Value.indexOf(SV);
         RemoveData(SV, SI);
