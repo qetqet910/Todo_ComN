@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="SCSS/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="Img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<body class="body">
+    <div class="screen">
+        <header></header>
+        <main>
+            <!-- clock -->
+            <section class="clock">
+                <h1 class="HMS"></h1>
+            </section>
+            <!-- user -->
+            <section class="User">
+                <form class="user">
+                    <input type="text" required maxlength="20" placeholder="Username">
+                    <button type="submit"></button>
+                </form>
+                <h2 class="UN"></h2>
+            </section>
+            <!-- todo -->
+            <section class="Todo">
+                <section class="input">
+                    <form>
+                        <input type="text" placeholder="Todo_title" required maxlength="20">
+                        <button type="submit" value="X"></button>
+                    </form>
+                </section>
+                <section class="List">
+                    <ul class="container">
+
+                    </ul>
+                </section>
+            </section>
+            <!-- qoute -->
+            <section class="qoute">
+                <p>
+                    <span class="q"></span>
+                    <span class="a"></span>
+                </p>
+            </section>
+            <!-- weather -->
+            <section class="weather">
+                <div class="temp">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="C">
+                    <p class="country">
+
+                    </p>
+                    <p class="weather_condition">
+    
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+    <script src="JS/Clock.js"></script>
+    <script src="JS/User.js"></script>
+    <script src="JS/LocalTodo.js"></script>
+
+    <script src="JS/RandomQU.js"></script>
+    <script src="JS/RandomBG.js"></script>
+    <script src="JS/weather.js"></script>
+</html>

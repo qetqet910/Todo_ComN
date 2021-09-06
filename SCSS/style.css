@@ -1,0 +1,288 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  background-position: center;
+  overflow: hidden;
+}
+
+body::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: -webkit-gradient(linear, right top, left top, from(black), color-stop(gray), to(black));
+  background: linear-gradient(to left, black, gray, black);
+  opacity: .5;
+  z-index: -1;
+}
+
+body .screen {
+  display: block;
+  height: 100vh;
+}
+
+body .screen main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .screen main .clock {
+  margin-top: 100px;
+}
+
+body .screen main .clock h1 {
+  font-size: 70px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+body .screen main .User {
+  margin-top: 50px;
+}
+
+body .screen main .User .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .screen main .User .user input, body .screen main .User .user button {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+}
+
+body .screen main .User .user input::-webkit-input-placeholder, body .screen main .User .user button::-webkit-input-placeholder {
+  color: white;
+}
+
+body .screen main .User .user input:-ms-input-placeholder, body .screen main .User .user button:-ms-input-placeholder {
+  color: white;
+}
+
+body .screen main .User .user input::-ms-input-placeholder, body .screen main .User .user button::-ms-input-placeholder {
+  color: white;
+}
+
+body .screen main .User .user input::placeholder, body .screen main .User .user button::placeholder {
+  color: white;
+}
+
+body .screen main .User .user input {
+  border-bottom: 3px solid white;
+}
+
+body .screen main .User .user button {
+  display: none;
+}
+
+body .screen main .User h2 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+body .screen main .Todo_li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .screen main .Todo_li button, body .screen main .Todo_li span {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+}
+
+body .screen main .Todo_li button {
+  margin-left: 14px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+body .screen main .Todo_li span {
+  font-size: 20px;
+}
+
+body .screen main .Todo .input {
+  margin-top: 50px;
+}
+
+body .screen main .Todo .input form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .screen main .Todo .input form input, body .screen main .Todo .input form button {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+}
+
+body .screen main .Todo .input form input::-webkit-input-placeholder, body .screen main .Todo .input form button::-webkit-input-placeholder {
+  color: white;
+}
+
+body .screen main .Todo .input form input:-ms-input-placeholder, body .screen main .Todo .input form button:-ms-input-placeholder {
+  color: white;
+}
+
+body .screen main .Todo .input form input::-ms-input-placeholder, body .screen main .Todo .input form button::-ms-input-placeholder {
+  color: white;
+}
+
+body .screen main .Todo .input form input::placeholder, body .screen main .Todo .input form button::placeholder {
+  color: white;
+}
+
+body .screen main .Todo .input form input {
+  border-bottom: 3px solid white;
+}
+
+body .screen main .Todo .input form button {
+  display: none;
+}
+
+body .screen main .Todo .List {
+  margin-top: 50px;
+}
+
+body .screen main .qoute p {
+  position: absolute;
+  bottom: 30px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+
+body .screen main .weather .temp {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  color: white;
+  font-size: 12px;
+}
+
+body .screen main .weather .temp p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4px;
+}
+
+body .screen main .weather .C {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 12px;
+}
+
+body .screen main .weather .C p {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
