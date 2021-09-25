@@ -124,7 +124,6 @@ body .screen main .User .user button {
 body .screen main .User h2 {
   font-size: 30px;
   color: white;
-  text-transform: uppercase;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 1px;
 }
@@ -284,5 +283,6 @@ body .screen main .weather .C {
 
 body .screen main .weather .C p {
   color: white;
+  margin-top: 4px;
 }
 /*# sourceMappingURL=style.css.map */
